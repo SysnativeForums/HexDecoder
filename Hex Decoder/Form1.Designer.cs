@@ -36,6 +36,7 @@
             label1 = new Label();
             label2 = new Label();
             Latin1_Convert_Button = new Button();
+            Convert_S256H_Button = new Button();
             SuspendLayout();
             // 
             // Source_TextBox
@@ -66,7 +67,7 @@
             // 
             // UTF16Convert_Button
             // 
-            UTF16Convert_Button.Location = new Point(611, 327);
+            UTF16Convert_Button.Location = new Point(609, 327);
             UTF16Convert_Button.Name = "UTF16Convert_Button";
             UTF16Convert_Button.Size = new Size(168, 40);
             UTF16Convert_Button.TabIndex = 3;
@@ -94,7 +95,7 @@
             // 
             // Latin1_Convert_Button
             // 
-            Latin1_Convert_Button.Location = new Point(421, 327);
+            Latin1_Convert_Button.Location = new Point(422, 327);
             Latin1_Convert_Button.Name = "Latin1_Convert_Button";
             Latin1_Convert_Button.Size = new Size(165, 40);
             Latin1_Convert_Button.TabIndex = 6;
@@ -102,11 +103,22 @@
             Latin1_Convert_Button.UseVisualStyleBackColor = true;
             Latin1_Convert_Button.Click += Latin1_Convert_Button_Click;
             // 
+            // Convert_S256H_Button
+            // 
+            Convert_S256H_Button.Location = new Point(245, 327);
+            Convert_S256H_Button.Name = "Convert_S256H_Button";
+            Convert_S256H_Button.Size = new Size(153, 40);
+            Convert_S256H_Button.TabIndex = 7;
+            Convert_S256H_Button.Text = "Convert (S256H)";
+            Convert_S256H_Button.UseVisualStyleBackColor = true;
+            Convert_S256H_Button.Click += Convert_S256H_Button_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(989, 633);
+            Controls.Add(Convert_S256H_Button);
             Controls.Add(Latin1_Convert_Button);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -130,5 +142,6 @@
         private Label label1;
         private Label label2;
         private Button Latin1_Convert_Button;
+        private Button Convert_S256H_Button;
     }
 }

@@ -90,5 +90,24 @@ namespace Hex_Decoder
 
             Target_TextBox.Text = builder.ToString();
         }
+
+        private void Convert_S256H_Button_Click(object sender, EventArgs e)
+        {
+            StringBuilder builder = new StringBuilder();
+
+            //Match multiple values
+            MatchCollection matches = GetMatches();
+
+            foreach (Match match in matches)
+            {
+                string hex_string = match.Value.Replace(",", string.Empty);
+                byte[] bytes = Convert.FromHexString(hex_string);
+                string result = Convert.ToBase64String(bytes);
+
+                builder.AppendLine(result);
+            }
+
+            Target_TextBox.Text = builder.ToString();
+        }
     }
 }
