@@ -35,6 +35,7 @@
             UTF16Convert_Button = new Button();
             label1 = new Label();
             label2 = new Label();
+            Latin1_Convert_Button = new Button();
             SuspendLayout();
             // 
             // Source_TextBox
@@ -65,7 +66,7 @@
             // 
             // UTF16Convert_Button
             // 
-            UTF16Convert_Button.Location = new Point(605, 327);
+            UTF16Convert_Button.Location = new Point(611, 327);
             UTF16Convert_Button.Name = "UTF16Convert_Button";
             UTF16Convert_Button.Size = new Size(168, 40);
             UTF16Convert_Button.TabIndex = 3;
@@ -91,11 +92,22 @@
             label2.TabIndex = 5;
             label2.Text = "Result";
             // 
+            // Latin1_Convert_Button
+            // 
+            Latin1_Convert_Button.Location = new Point(421, 327);
+            Latin1_Convert_Button.Name = "Latin1_Convert_Button";
+            Latin1_Convert_Button.Size = new Size(165, 40);
+            Latin1_Convert_Button.TabIndex = 6;
+            Latin1_Convert_Button.Text = "Convert (Latin1)";
+            Latin1_Convert_Button.UseVisualStyleBackColor = true;
+            Latin1_Convert_Button.Click += Latin1_Convert_Button_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(989, 633);
+            Controls.Add(Latin1_Convert_Button);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(UTF16Convert_Button);
@@ -117,5 +129,6 @@
         private Button UTF16Convert_Button;
         private Label label1;
         private Label label2;
+        private Button Latin1_Convert_Button;
     }
 }
