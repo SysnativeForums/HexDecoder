@@ -128,7 +128,7 @@
             Controls.Add(Source_TextBox);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Hex Decoder - Convert Hex Strings to Strings";
+            Text = "Hex Decoder - Convert Hex Strings to Strings [1.2.0]";
             ResumeLayout(false);
             PerformLayout();
         }

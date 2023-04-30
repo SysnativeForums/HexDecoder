@@ -8,14 +8,14 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageIcon></PackageIcon>
-    <ApplicationIcon>hex decoder.ico</ApplicationIcon>
+    <ApplicationIcon>hexdecoder.ico</ApplicationIcon>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <FileVersion>1.2.0.0</FileVersion>
     <Version>1.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="hex decoder.ico" />
+    <Content Include="hexdecoder.ico" />
   </ItemGroup>
 
   <ItemGroup>
