@@ -33,13 +33,15 @@
             ASCIIConvert_Button = new Button();
             Target_TextBox = new RichTextBox();
             UTF16Convert_Button = new Button();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // Source_TextBox
             // 
-            Source_TextBox.Location = new Point(27, 20);
+            Source_TextBox.Location = new Point(27, 42);
             Source_TextBox.Name = "Source_TextBox";
-            Source_TextBox.Size = new Size(931, 281);
+            Source_TextBox.Size = new Size(931, 259);
             Source_TextBox.TabIndex = 0;
             Source_TextBox.Text = "";
             // 
@@ -71,11 +73,31 @@
             UTF16Convert_Button.UseVisualStyleBackColor = true;
             UTF16Convert_Button.Click += UTF16Convert_Button_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(29, 13);
+            label1.Name = "label1";
+            label1.Size = new Size(66, 25);
+            label1.TabIndex = 4;
+            label1.Text = "Source";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(27, 342);
+            label2.Name = "label2";
+            label2.Size = new Size(59, 25);
+            label2.TabIndex = 5;
+            label2.Text = "Result";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(989, 633);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(UTF16Convert_Button);
             Controls.Add(Target_TextBox);
             Controls.Add(ASCIIConvert_Button);
@@ -84,6 +106,7 @@
             Name = "Form1";
             Text = "Hex Decoder - Convert Hex Strings to Strings";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -92,5 +115,7 @@
         private Button ASCIIConvert_Button;
         private RichTextBox Target_TextBox;
         private Button UTF16Convert_Button;
+        private Label label1;
+        private Label label2;
     }
 }
