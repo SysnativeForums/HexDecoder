@@ -104,6 +104,7 @@ namespace Hex_Decoder
                 byte[] bytes = Convert.FromHexString(hex_string);
                 string result = Convert.ToBase64String(bytes);
 
+                builder.AppendLine(hex_string.ToUpper());
                 builder.AppendLine(result);
             }
 
